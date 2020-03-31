@@ -23,14 +23,14 @@ app.use(express.static(publicDir));
 app.get('', (req, res) => {
     res.render('index', {
         title: 'weather App',
-        name: 'Florian Wollenzien',
+        name: 'Florian Wolle',
     });
 })
 
 app.get('/about', (req, res) => {
     res.render('about', {
         title: 'About',
-        name: 'Florian Wollenzien',
+        name: 'Florian Wolle',
     })
 })
 
@@ -38,7 +38,7 @@ app.get('/help', (req, res) => {
     res.render('help', {
         title: 'Help',
         helpText: 'Call me if you need some help!',
-        name: 'Florian Wollenzien',
+        name: 'Florian Wolle',
     })
 })
 
@@ -83,7 +83,7 @@ app.get('/product', (req, res) => {
 app.get('/help/*', (req, res) => {
     res.render('404', {
         title: '404',
-        name: 'Florian Wollenzien',
+        name: 'Florian Wolle',
         errorMessage: 'Help article not found',
     })
 })
@@ -91,7 +91,7 @@ app.get('/help/*', (req, res) => {
 app.get('*', (req, res) => {
     res.render('404', {
         title: '404',
-        name: 'Florian Wollenzien',
+        name: 'Florian Wolle',
         errorMessage: 'Page not found',
     })
 })

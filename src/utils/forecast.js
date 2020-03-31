@@ -10,7 +10,7 @@ const forecast = (lat, long, callback) => {
         } else if (body.error) {
             callback('Unable to find latitude and lontitude. Try another search.', undefined);
         } else {
-            callback(undefined, body.daily.data[0].summary + ` It is currently ${body.currently.temperature} degrees out. There is a ${body.currently.precipProbability}% chance of ${body.currently.precipType} and the speed of the wind is ${body.currently.windSpeed}km/h`);
+            callback(undefined, body.daily.data[0].summary + ` It is currently ${body.currently.temperature} degrees out. There is a ${body.currently.precipProbability}% chance of ${body.currently.precipType} and the speed of the wind is ${body.currently.windSpeed} km/h.`);
         }
     })
 }
